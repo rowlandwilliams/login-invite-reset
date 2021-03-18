@@ -1,0 +1,44 @@
+.adminBoardContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #c7ced1;
+  margin: 20px 0px;
+}
+
+.tabs {
+  width: 90%;
+  border: 1px solid #c7ced1;
+}
+
+.tab-list {
+  border-bottom: 1px solid#c7ced1;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  font-size: 12px;
+  background-color: #0e1421;
+  opacity: 0.2;
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  border: 1px solid#c7ced1;
+  border-width: 1px 1px 0 1px;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.tab-content {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.invite-container {
+  display: flex;
+  justify-content: center;
+}

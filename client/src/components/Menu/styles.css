@@ -1,0 +1,50 @@
+.btnContainer {
+  height: 50px;
+  white-space: nowrap;
+}
+
+.button {
+  height: 100%;
+  border: 0;
+  background-color: #0e1421;
+  color: #c7ced1;
+  cursor: pointer;
+  outline: 0;
+  font-size: 30px;
+  padding: 5px 10px 0 10px;
+}
+
+@media (max-width: 600px) {
+  .button {
+    height: 96%;
+    padding-bottom: 0px;
+    padding-right: 5px;
+  }
+}
+
+.button.open {
+  opacity: 0.4;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  font-size: 10px;
+}
+
+.dropdown-list {
+  background-color: #0e1421;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown-link {
+  color: #c7ced1;
+  padding: 8px 12px;
+}
+
+.dropdown-link:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}

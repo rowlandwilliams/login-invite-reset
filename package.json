@@ -1,0 +1,49 @@
+{
+  "name": "flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "heroku-postbuild": "cd client && npm run build",
+    "db:migrate": "node api/db/migrate.js",
+    "db:reset": "node api/db/reset.js",
+    "db:seed": "node api/db/seed.js",
+    "postinstall": "cd client && npm i",
+    "dev": "concurrently \"npm run start:dev\" \"cd client && PORT=3001 npm run start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.0",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "classnames": "^2.2.6",
+    "concurrently": "^5.3.0",
+    "connect-redis": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "cross-env": "^7.0.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.6",
+    "express-session": "^1.17.1",
+    "helmet": "^4.3.1",
+    "heroku-ssl-redirect": "^0.1.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.5.1",
+    "pgtools": "^0.3.0",
+    "react-virtualized-auto-sizer": "^1.0.4",
+    "redis": "^3.0.2",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,28 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #c7ced1;
+  margin-top: 20px;
+  width: 300px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+.form-title {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.form-header {
+  font-size: 16px;
+}
+
+@media (max-width: 400px) {
+  .form-container {
+    width: 90%;
+  }
+}
